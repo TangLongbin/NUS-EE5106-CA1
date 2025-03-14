@@ -1,0 +1,2 @@
+# NUS-EE5106-CA1
+CA1 project of NUS EE5106 AY24/25.

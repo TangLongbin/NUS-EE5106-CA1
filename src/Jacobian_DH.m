@@ -51,7 +51,7 @@ function J = Jacobian_DH(DH_params, angle_unit)
     % Calculate the transformation matrices and joint positions
     for i = 1:n
         A = DH_matrix(DH_params(i, 1), DH_params(i, 2), DH_params(i, 3), DH_params(i, 4), angle_unit);
-        T = T * A;  % calculate T_i_{i-1}
+        T = T * A;  % calculate T^i_0
         p(:, i+1) = T(1:3, 4);  % store the joint position
         z(:, i+1) = T(1:3, 3);  % store the z-axis vector
     end
